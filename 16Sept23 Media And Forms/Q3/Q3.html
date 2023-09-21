@@ -1,0 +1,36 @@
+<!-- Modify the previous assignment so that the audio and video play automatically as the page is loaded and
+they should play infinitely -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio Example</title>
+</head>
+
+<body>
+    <h1>Video Example</h1>
+
+    <!-- Video with playback controls -->
+    <video width="640" height="360" controls autoplay loop muted>
+        <!-- Google just changed their policy for autoplay videos, it has to be muted -->
+        <!-- Recently many browsers can only autoplay the videos with sound off, so we need to add muted attribute to the video tag too -->
+        <source src="sample-video.mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>Audio Example</h1>
+
+    <!-- Audio with playback controls -->
+    <!-- Note For Chrome Browse to have autoplay , according to recent policies , we have to use JS -->
+    <!-- For Other Browsers Autoplay is allowed only when muted , if not we have to use JS to autoplay -->
+    <!-- This code only works for firefox only for other use JS for autoplay -->
+    <audio controls autoplay loop muted> 
+        <source src="sample-audio.mp3">
+        Your browser does not support the audio tag.
+    </audio>
+</body>
+
+</html>

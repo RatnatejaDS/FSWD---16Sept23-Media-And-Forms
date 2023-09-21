@@ -1,0 +1,55 @@
+<!-- Create an image gallery that holds multiple images -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        /* Styling for the image gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns */
+            gap: 10px; /* Spacing between images */
+        }
+
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery Of PW Skills </h1>
+
+    <div class="image-gallery">
+        <!-- Image 1 -->
+        <img src="1.png" alt="Image 1">
+        
+        <!-- Image 2 -->
+        <img src="2.jpg" alt="Image 2">
+        
+        <!-- Image 3 -->
+        <img src="3.jpg" alt="Image 3">
+        
+        <!-- Add more images as needed -->
+    </div>
+    <br><br>
+    <div class="image-gallery">
+        <!-- Image 1 -->
+        <img src="4.jpg" alt="Image 1">
+        
+        <!-- Image 2 -->
+        <img src="5.jpg" alt="Image 2">
+        
+        <!-- Image 3 -->
+        <img src="6.jpg" alt="Image 3">
+        
+        <!-- Add more images as needed -->
+    </div>
+</body>
+</html>
